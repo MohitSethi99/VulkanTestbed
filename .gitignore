@@ -1,0 +1,26 @@
+# Binaries
+bin/
+bin-int/
+
+# Visual Studio files and folder
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.ini
+
+# GLAD binaries
+**/Glad/bin/
+
+# ArcEngine files
+*.log
+*.json
+
+!/Arc-Editor/imgui.ini
+*.csproj
+*.user
+**/Assemblies
+Arc-Editor/Resources/Scripts
+**/Binaries
+**/Intermediates
