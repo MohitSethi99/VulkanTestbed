@@ -5,7 +5,7 @@ namespace VulkanTestbed
 	class VulkanContext
 	{
 	public:
-		static void Init();
+		static void Init(void* glfwWindow);
 		static void Shutdown();
 	};
 }

@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "Application.h"
 
-#define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
 #define GLM_FORCE_RADIANS
@@ -21,8 +20,8 @@ namespace VulkanTestbed
 		glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 		m_Window = glfwCreateWindow(1600, 900, "Vulkan Testbed", nullptr, nullptr);
-		
-		VulkanContext::Init();
+
+		VulkanContext::Init(m_Window);
 	}
 
 	Application::~Application()
